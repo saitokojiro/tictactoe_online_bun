@@ -54,6 +54,7 @@ body{
     height: 100%;
     border: 1px solid black;
     display: flex;
+    cursor: pointer;
 }
 
 .c1,
@@ -92,4 +93,13 @@ width: 100%;
 .s_player_two{
     width: 80px;
 
+}
+
+.YouAdd,
+.AdvAdd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold; 
 }
