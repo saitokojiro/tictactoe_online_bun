@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div class="MainContainer">
+        <div class="Container_score">
+            <div class="playerOne">
+                <span class="player1">player One</span>
+                <span>score: 0</span>
+            </div>
+            <div class="playerTwo">
+                <span class="player2">player Two</span>
+                <span>score: 0</span>
+            </div>
+        </div>
+        <div class="SpaceRowContainer">
+            <div class="row_one">
+                <div class="crow_one c1"></div>
+                <div class="crow_one c2"></div>
+                <div class="crow_one c3"></div>
+            </div>
+            <div class="row_two">
+                <div class="crow_two c1"></div>
+                <div class="crow_two c2"></div>
+                <div class="crow_two c3"></div>
+            </div>
+            <div class="row_three">
+                <div class="crow_three c1"></div>
+                <div class="crow_three c2"></div>
+                <div class="crow_three c3"></div>
+            </div>
+        </div>
+        <div class="positionPlayer">
+            <div class="boxPlayer">
+                <span style="font-size: 12px;">your pseudo </span>
+                <input type="text" name="playername" id="playername" class="inputPlayerName">
+                <div class="cbtn">
+
+                    <button class="s_player_one" onclick="getTypePlayer(1)">Select one</button>
+                    <button class="s_player_two" onclick="getTypePlayer(2)">Select two</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js" async defer> </script>
+</body>
+
+</html>

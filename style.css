@@ -1,0 +1,95 @@
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.MainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+
+.Container_score {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding: 10px;
+}
+.playerOne{
+    display: flex;
+    flex-direction: column;
+}
+.playerTwo{
+    display: flex;
+    flex-direction: column;
+}
+
+.SpaceRowContainer {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.row_one,
+.row_two,
+.row_three {
+        width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.crow_one,
+.crow_two,
+.crow_three {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+}
+
+.c1,
+.c2,
+.c3 {
+}
+
+
+.positionPlayer{
+    margin-top: 5px;
+    
+}
+.boxPlayer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.inputPlayerName{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+width: 100%;
+}
+.cbtn{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.s_player_one,
+.s_player_two{
+    width: 80px;
+
+}
