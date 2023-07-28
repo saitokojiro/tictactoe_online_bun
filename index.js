@@ -45,12 +45,20 @@ let checkingByRow = (select, findItem) => {
   }
   return counter;
 };
-let checkingByCol = (arrayCol, arrayPos, findItem) => {};
-let checkingByDiag = (arrayCol, arrayPos, findItem) => {};
+let checkingByCol = (arrayCol, arrayPos, findItem) => {
+  let counter = 0;
+  for (let i = 0; i < arrayCol.length; i++) {
+    let item = arrayCol[i][arrayPos[i]].classList;
+    if (item.contains(findItem)) {
+      counter++;
+    }
+  }
+  return counter;
+};
 
 let checking = () => {
   let rowOne = document.querySelector(".row_one").children;
-  let rowTwo = document.querySelector(".row_two");
+  let rowTwo = document.querySelector(".row_two").children;
   let rowThree = document.querySelector(".row_three").children;
 
   /**
@@ -67,8 +75,8 @@ let checking = () => {
   checkingByCol([rowOne, rowTwo, rowThree], [2, 2, 2], "youAdd");
 
   //diag
-  checkingByDiag([rowOne, rowTwo, rowThree], [0, 1, 2], "youAdd");
-  checkingByDiag([rowOne, rowTwo, rowThree], [2, 1, 0], "youAdd");
+  checkingByCol([rowOne, rowTwo, rowThree], [0, 1, 2], "youAdd");
+  checkingByCol([rowOne, rowTwo, rowThree], [2, 1, 0], "youAdd");
 
   /**
    * ADV
@@ -84,8 +92,8 @@ let checking = () => {
   checkingByCol([rowOne, rowTwo, rowThree], [2, 2, 2], "advAdd");
 
   //diag
-  checkingByDiag([rowOne, rowTwo, rowThree], [0, 1, 2], "advAdd");
-  checkingByDiag([rowOne, rowTwo, rowThree], [2, 1, 0], "advAdd");
+  checkingByCol([rowOne, rowTwo, rowThree], [0, 1, 2], "advAdd");
+  checkingByCol([rowOne, rowTwo, rowThree], [2, 1, 0], "advAdd");
 
   // rowOne.children
 };
