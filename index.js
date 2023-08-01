@@ -1,4 +1,6 @@
-let ws = new WebSocket("ws://localhost:3090");
+let ip = "172.20.12.101"
+let port = 3090
+let ws = new WebSocket("ws://"+ ip +":"+port);
 
 let playersJson = [];
 let TempScoring = [];
